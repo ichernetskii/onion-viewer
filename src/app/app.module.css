@@ -1,0 +1,80 @@
+body, html, :global(#root), .app {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.app {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropZone {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgb(255,239,189) 0%, rgb(219,254,215) 100%);
+}
+
+.dropZoneRect {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Arial", sans-serif;
+    font-size: 2rem;
+    border: 4px dashed #000;
+    border-radius: 4px;
+    height: calc(100% - 10px);
+    width: calc(100% - 10px);
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+.contentWrapper {
+    position: relative;
+    cursor: col-resize;
+    width: 80vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+.content {
+    display: flex;
+    position: relative;
+    pointer-events: auto;
+}
+
+.imageWrapper {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    overflow: hidden;
+}
+
+.image {
+    max-width: 80vw;
+    max-height: 80vh;
+}
+
+.verticalLine {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background: rgba(82, 255, 38, 0.58);
+    pointer-events: none;
+}
+
+.stretchVertical {
+    height: 100%;
+}
+
+.hidden {
+    display: none;
+}

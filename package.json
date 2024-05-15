@@ -1,0 +1,24 @@
+{
+  "name": "onion-viewer",
+  "version": "1.0.0",
+  "author": "Ilia Chernetskii <ichernetskii@gmail.com>",
+  "private": true,
+  "description": "Onion Viewer for images",
+  "type": "module",
+  "scripts": {
+    "build": "node build.js mode=production",
+    "watch": "node build.js mode=development"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.11",
+    "@types/react": "^18.3.2",
+    "@types/react-dom": "^18.3.0",
+    "esbuild": "^0.21.2",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "packageManager": "yarn@4.2.2"
+}
