@@ -1,3 +1,22 @@
+:root {
+    --rainbow: linear-gradient(
+            90deg,
+            rgba(255, 0, 0, 1) 0%,
+            rgba(255, 154, 0, 1) 5%,
+            rgba(208, 222, 33, 1) 10%,
+            rgba(79, 220, 74, 1) 15%,
+            rgba(63, 218, 216, 1) 20%,
+            rgba(47, 201, 226, 1) 25%,
+            rgba(28, 127, 238, 1) 30%,
+            rgba(95, 21, 242, 1) 35%,
+            rgba(186, 12, 248, 1) 40%,
+            rgba(251, 7, 217, 1) 45%,
+            rgba(255, 0, 0, 1) 49.99%,
+            #000 50%,
+            #000 100%
+    );
+}
+
 body, html, :global(#root), .app {
     margin: 0;
     padding: 0;
@@ -73,6 +92,30 @@ body, html, :global(#root), .app {
 
 .stretchVertical {
     height: 100%;
+}
+
+.footer {
+    position: absolute;
+    right: 2em;
+    bottom: 2em;
+    font-weight: bold;
+    font-family: "Arial", sans-serif;
+    font-size: 0.7em;
+    text-decoration: none;
+
+    .footer__text {
+        background-image: var(--rainbow);
+        background-clip: text;
+        background-size: 200% 100%;
+        background-position: 100.1% 0;
+        background-repeat: no-repeat;
+        color: transparent;
+        transition: background-position 0.5s;
+    }
+}
+
+.footer:hover .footer__text {
+    background-position: 0 0;
 }
 
 .hidden {

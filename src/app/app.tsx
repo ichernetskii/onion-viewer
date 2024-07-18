@@ -108,6 +108,10 @@ export const App: FC = () => {
 					</div>
 				</div>
 			</div>
+			<a className={styles.footer} href="https://github.com/ichernetskii">
+				<div className={styles.footer__bg} />
+				<span className={styles.footer__text}>Made by Ilia Chernetskii</span>
+			</a>
 		</div>
 	);
 }
